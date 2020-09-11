@@ -7,6 +7,7 @@
    left: 0;
    top: 0;
    background-color: $white;
+   z-index: 100;
 
    &.active {
       background-color: rgba($VeryDarkBlue, 0.95);
