@@ -74,3 +74,68 @@
       }
    }
 }
+
+.download {
+   padding-bottom: 3rem;
+   text-align: center;
+
+   &__title {
+      @include title;
+   }
+
+   &__description {
+      @include description;
+   }
+
+   &__grid {
+      display: grid;
+      padding-top: 2rem;
+      grid-row-gap: 3rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+   }
+
+   &__item {
+      -webkit-box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.3);
+      box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.3);
+      border-radius: 0.5rem;
+   }
+   
+   &__media {
+      padding: 3rem 6rem;
+   }
+
+   &__subtitle {
+      margin-top: 0;
+   }
+
+   &__subtitle,
+   &__version {
+      @include title;
+      font-size: 1.25rem;
+   }
+
+   &__version {
+      color: $GrayishBlue;
+      font-size: 1.1rem;
+   }
+
+   &__separator {
+      margin-top: 2rem;
+   }
+
+   &__border {
+      display: block;
+   }
+
+   &__footer {
+      padding: 2rem;
+   }
+
+   &__button {
+      @include button;
+      display: block;
+   }
+}
+
